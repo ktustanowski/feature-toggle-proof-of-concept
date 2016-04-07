@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, Togglable {
 
     @IBOutlet weak var bottomLabel: UILabel!
+    @IBOutlet weak var rightLabel: UILabel!
     
     var decorate: (() -> ())?
     

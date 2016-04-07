@@ -8,12 +8,8 @@
 
 import UIKit
 
-class ModalViewController: UIViewController {
+class DismissableViewController: UIViewController {
  
-    override func awakeFromNib() {
-        FeatureTogglableDecorator.decorate(self)
-    }
-
     @IBAction func dismiss() {
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }

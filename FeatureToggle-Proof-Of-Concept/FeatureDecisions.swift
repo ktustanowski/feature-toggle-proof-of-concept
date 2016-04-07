@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+struct FeatureDecisions {
+    
+    static var toggleRouter = ToggleRouter()
+    
+    static func coolFeature() -> Bool {
+        return toggleRouter.coolFeature ?? false
+    }
+
+    static func awesomeFeature() -> Bool {
+        guard let ratio = toggleRouter.awesomeFeatureExperimentRatio else {
+            return toggleRouter.awesomeFeature ?? false
+        }
+        
+        /* canary feature release */
+        let randomNumber = Double(Int(arc4random_uniform(11))) / 10.0
+        print(randomNumber)
+        
+        return  ratio >= randomNumber
+    }
+
+}

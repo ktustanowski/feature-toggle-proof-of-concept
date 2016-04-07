@@ -9,14 +9,24 @@
 import Foundation
 
 class FeatureTogglableDecorator {
-    
+        
     class func decorate(viewController: ViewController) {
         viewController.decorate = {
-            viewController.addShowBlueAfterSwipeUp()
+            if (FeatureDecisions.coolFeature()) {
+                viewController.enableCoolFeature()
+            }
+            
+            if (FeatureDecisions.awesomeFeature()) {
+                viewController.enableAwesomeFeature()
+            }
         }
     }
     
-    class func decorate(viewController: ModalViewController) {
-        print("Decorated MVC")        
-    }
+//    class func decorate(viewController: CoolFeatureViewController) {
+//        print("Decorated MVC")        
+//    }
+//
+//    class func decorate(viewController: AwesomeFeatureViewController) {
+//        print("Decorated MVC")
+//    }
 }

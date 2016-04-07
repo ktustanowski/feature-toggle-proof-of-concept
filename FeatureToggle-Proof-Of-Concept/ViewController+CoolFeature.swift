@@ -10,19 +10,16 @@ import UIKit
 
 extension ViewController {
     
-    func addShowBlueAfterSwipeUp() {
+    func enableCoolFeature() {
         let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:#selector(swipedUp(_:)))
         swipeGestureRecognizer.direction = .Up
         view.addGestureRecognizer(swipeGestureRecognizer)
-        updateUserInterface()
-    }
-    
-    func updateUserInterface() {
+        
         bottomLabel.hidden = false
     }
     
     func swipedUp(recognizer: UISwipeGestureRecognizer) {
-        performSegueWithIdentifier("ShowBlue", sender: nil)
+        performSegueWithIdentifier("ShowCoolFeature", sender: nil)
     }
     
 }

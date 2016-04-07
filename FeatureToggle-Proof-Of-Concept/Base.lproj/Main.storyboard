@@ -3,8 +3,22 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0px-4c-HXH">
+            <objects>
+                <navigationController id="bGQ-1F-Ae7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sj5-dR-dAR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XbK-0k-Fbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1527" y="469"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -23,25 +37,36 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxn-Jt-wsU">
+                                <rect key="frame" x="506" y="289" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hHb-ip-Ilc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Icz-lT-ucx"/>
+                            <constraint firstItem="zxn-Jt-wsU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Qwa-FN-whI"/>
+                            <constraint firstItem="zxn-Jt-wsU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iEk-Wk-Xjh"/>
                             <constraint firstAttribute="bottom" secondItem="hHb-ip-Ilc" secondAttribute="bottom" constant="20" symbolic="YES" id="wnb-aG-a5A"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomLabel" destination="hHb-ip-Ilc" id="MMr-dW-X9U"/>
-                        <segue destination="hje-Q4-VEe" kind="presentation" identifier="ShowBlue" id="nTR-RZ-ovI"/>
+                        <outlet property="rightLabel" destination="zxn-Jt-wsU" id="Wtv-6x-v9V"/>
+                        <segue destination="hje-Q4-VEe" kind="presentation" identifier="ShowCoolFeature" id="nTR-RZ-ovI"/>
+                        <segue destination="SUg-vQ-Aed" kind="presentation" identifier="ShowAwesomeFeature" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="0b7-Ei-QgA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-74" y="466"/>
         </scene>
-        <!--Modal View Controller-->
+        <!--Cool Feature View Controller-->
         <scene sceneID="jQ3-rB-ut8">
             <objects>
-                <viewController id="hje-Q4-VEe" customClass="ModalViewController" customModule="FeatureToggle_Proof_Of_Concept" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hje-Q4-VEe" customClass="CoolFeatureViewController" customModule="FeatureToggle_Proof_Of_Concept" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vyb-vO-G3o"/>
                         <viewControllerLayoutGuide type="bottom" id="rOS-nr-yNt"/>
@@ -50,32 +75,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fO4-mt-7p4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fO4-mt-7p4">
+                                <rect key="frame" x="288" y="19" width="25" height="561"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agS-DZ-74G">
+                                <rect key="frame" x="236" y="550" width="129" height="30"/>
+                                <state key="normal" title="Activate Cool Stuff"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="agS-DZ-74G" firstAttribute="centerX" secondItem="5FF-pz-8UM" secondAttribute="centerX" id="7TA-tT-K5u"/>
+                            <constraint firstItem="rOS-nr-yNt" firstAttribute="top" secondItem="fO4-mt-7p4" secondAttribute="bottom" constant="20" id="Cay-jG-Ali"/>
+                            <constraint firstItem="fO4-mt-7p4" firstAttribute="centerX" secondItem="5FF-pz-8UM" secondAttribute="centerX" id="HVx-Ub-PmT"/>
+                            <constraint firstItem="fO4-mt-7p4" firstAttribute="centerY" secondItem="5FF-pz-8UM" secondAttribute="centerY" id="dY8-ik-OZQ"/>
+                            <constraint firstItem="agS-DZ-74G" firstAttribute="centerY" secondItem="5FF-pz-8UM" secondAttribute="centerY" id="jUK-Rt-yyR"/>
+                            <constraint firstItem="rOS-nr-yNt" firstAttribute="top" secondItem="agS-DZ-74G" secondAttribute="bottom" constant="20" id="xeW-AV-OH2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jUK-Rt-yyR"/>
+                                <exclude reference="Cay-jG-Ali"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UQ5-oB-eJi" appends="YES" id="YQX-2j-vjb"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLabelMarginConstraint" destination="Cay-jG-Ali" id="U0h-mi-UOI"/>
+                        <outlet property="bottomMarginActivateConstraint" destination="xeW-AV-OH2" id="0D0-5o-e3S"/>
+                        <outlet property="centerActivateButtonVertically" destination="jUK-Rt-yyR" id="Cgy-FV-rKQ"/>
+                        <outlet property="centerActiveButtonVerticallyConstraint" destination="jUK-Rt-yyR" id="Nhv-yL-xzL"/>
+                        <outlet property="centerLabelVerticallyConstraint" destination="dY8-ik-OZQ" id="iWV-Gm-PyN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syq-TX-2iZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UQ5-oB-eJi">
+                    <connections>
+                        <action selector="dismiss" destination="hje-Q4-VEe" id="qJt-Zd-kaF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-74" y="1479"/>
+        </scene>
+        <!--Awesome Feature View Controller-->
+        <scene sceneID="aZH-6W-DPz">
+            <objects>
+                <viewController id="SUg-vQ-Aed" customClass="AwesomeFeatureViewController" customModule="FeatureToggle_Proof_Of_Concept" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6D9-No-32d"/>
+                        <viewControllerLayoutGuide type="bottom" id="47d-Sy-jwR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wkZ-bg-vDC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFO-QA-3Nd">
                                 <rect key="frame" x="288" y="289" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="fO4-mt-7p4" firstAttribute="centerX" secondItem="5FF-pz-8UM" secondAttribute="centerX" id="HVx-Ub-PmT"/>
-                            <constraint firstItem="fO4-mt-7p4" firstAttribute="centerY" secondItem="5FF-pz-8UM" secondAttribute="centerY" id="dY8-ik-OZQ"/>
+                            <constraint firstItem="rFO-QA-3Nd" firstAttribute="centerY" secondItem="wkZ-bg-vDC" secondAttribute="centerY" id="VOk-i3-YHF"/>
+                            <constraint firstItem="rFO-QA-3Nd" firstAttribute="centerX" secondItem="wkZ-bg-vDC" secondAttribute="centerX" id="o3k-QQ-LhF"/>
                         </constraints>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="UQ5-oB-eJi" appends="YES" id="YQX-2j-vjb"/>
+                            <outletCollection property="gestureRecognizers" destination="R7G-vT-OTq" appends="YES" id="6ZQ-5d-CPE"/>
                         </connections>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="syq-TX-2iZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="UQ5-oB-eJi">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJX-mW-Ce9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="R7G-vT-OTq">
                     <connections>
-                        <action selector="dismiss" destination="hje-Q4-VEe" id="q2z-8a-bv2"/>
+                        <action selector="dismiss" destination="SUg-vQ-Aed" id="pu3-DR-HbF"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="500" y="1491"/>
+            <point key="canvasLocation" x="832" y="466"/>
         </scene>
     </scenes>
 </document>

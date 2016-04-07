@@ -2,7 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>show_blue</key>
+	<key>cool_feature</key>
 	<true/>
+	<key>awesome_feature</key>
+	<string>YES</string>
+	<key>awesome_feature_canary_ratio</key>
+	<real>1</real>
+	<key>ab_experiment</key>
+	<string>YES</string>
+	<key>ab_experiment_ratio</key>
+	<real>1</real>
 </dict>
 </plist>
