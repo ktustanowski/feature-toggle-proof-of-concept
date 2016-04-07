@@ -13,6 +13,13 @@
 		9A0B92DB1CB64D5D00271ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B92DA1CB64D5D00271ACC /* Assets.xcassets */; };
 		9A0B92DE1CB64D5D00271ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B92DC1CB64D5D00271ACC /* LaunchScreen.storyboard */; };
 		9A0B92E91CB64D5D00271ACC /* FeatureToggle_Proof_Of_ConceptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B92E81CB64D5D00271ACC /* FeatureToggle_Proof_Of_ConceptTests.swift */; };
+		9A0B92F41CB64DCD00271ACC /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B92F31CB64DCD00271ACC /* ModalViewController.swift */; };
+		9A0B92F61CB6586B00271ACC /* ToggleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B92F51CB6586B00271ACC /* ToggleRouter.swift */; };
+		9A0B92F91CB658B200271ACC /* FeatureDecisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B92F81CB658B200271ACC /* FeatureDecisions.swift */; };
+		9A0B92FB1CB658CA00271ACC /* FeatureTogglableDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B92FA1CB658CA00271ACC /* FeatureTogglableDecorator.swift */; };
+		9A0B92FE1CB65A7A00271ACC /* ViewController+ShowBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B92FD1CB65A7A00271ACC /* ViewController+ShowBlue.swift */; };
+		9A0B93001CB65D6000271ACC /* Togglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B92FF1CB65D6000271ACC /* Togglable.swift */; };
+		9A0B93021CB65F1000271ACC /* Toggles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B93011CB65F1000271ACC /* Toggles.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		9A0B92E41CB64D5D00271ACC /* FeatureToggle-Proof-Of-ConceptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FeatureToggle-Proof-Of-ConceptTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0B92E81CB64D5D00271ACC /* FeatureToggle_Proof_Of_ConceptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureToggle_Proof_Of_ConceptTests.swift; sourceTree = "<group>"; };
 		9A0B92EA1CB64D5E00271ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A0B92F31CB64DCD00271ACC /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		9A0B92F51CB6586B00271ACC /* ToggleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleRouter.swift; sourceTree = "<group>"; };
+		9A0B92F81CB658B200271ACC /* FeatureDecisions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureDecisions.swift; sourceTree = "<group>"; };
+		9A0B92FA1CB658CA00271ACC /* FeatureTogglableDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureTogglableDecorator.swift; sourceTree = "<group>"; };
+		9A0B92FD1CB65A7A00271ACC /* ViewController+ShowBlue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ShowBlue.swift"; sourceTree = "<group>"; };
+		9A0B92FF1CB65D6000271ACC /* Togglable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Togglable.swift; sourceTree = "<group>"; };
+		9A0B93011CB65F1000271ACC /* Toggles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Toggles.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +92,13 @@
 			isa = PBXGroup;
 			children = (
 				9A0B92D31CB64D5D00271ACC /* AppDelegate.swift */,
-				9A0B92D51CB64D5D00271ACC /* ViewController.swift */,
+				9A0B92FC1CB65A3C00271ACC /* ViewController */,
 				9A0B92D71CB64D5D00271ACC /* Main.storyboard */,
 				9A0B92DA1CB64D5D00271ACC /* Assets.xcassets */,
 				9A0B92DC1CB64D5D00271ACC /* LaunchScreen.storyboard */,
 				9A0B92DF1CB64D5D00271ACC /* Info.plist */,
+				9A0B92F31CB64DCD00271ACC /* ModalViewController.swift */,
+				9A0B92F71CB6589600271ACC /* FeatureToggling */,
 			);
 			path = "FeatureToggle-Proof-Of-Concept";
 			sourceTree = "<group>";
@@ -94,6 +110,27 @@
 				9A0B92EA1CB64D5E00271ACC /* Info.plist */,
 			);
 			path = "FeatureToggle-Proof-Of-ConceptTests";
+			sourceTree = "<group>";
+		};
+		9A0B92F71CB6589600271ACC /* FeatureToggling */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B92F51CB6586B00271ACC /* ToggleRouter.swift */,
+				9A0B92F81CB658B200271ACC /* FeatureDecisions.swift */,
+				9A0B92FA1CB658CA00271ACC /* FeatureTogglableDecorator.swift */,
+				9A0B92FF1CB65D6000271ACC /* Togglable.swift */,
+				9A0B93011CB65F1000271ACC /* Toggles.plist */,
+			);
+			name = FeatureToggling;
+			sourceTree = "<group>";
+		};
+		9A0B92FC1CB65A3C00271ACC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B92D51CB64D5D00271ACC /* ViewController.swift */,
+				9A0B92FD1CB65A7A00271ACC /* ViewController+ShowBlue.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +183,6 @@
 				TargetAttributes = {
 					9A0B92CF1CB64D5D00271ACC = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = S288FYNY7S;
 					};
 					9A0B92E31CB64D5D00271ACC = {
 						CreatedOnToolsVersion = 7.3;
@@ -179,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A0B93021CB65F1000271ACC /* Toggles.plist in Resources */,
 				9A0B92DE1CB64D5D00271ACC /* LaunchScreen.storyboard in Resources */,
 				9A0B92DB1CB64D5D00271ACC /* Assets.xcassets in Resources */,
 				9A0B92D91CB64D5D00271ACC /* Main.storyboard in Resources */,
@@ -199,7 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A0B92F91CB658B200271ACC /* FeatureDecisions.swift in Sources */,
+				9A0B92F61CB6586B00271ACC /* ToggleRouter.swift in Sources */,
 				9A0B92D61CB64D5D00271ACC /* ViewController.swift in Sources */,
+				9A0B93001CB65D6000271ACC /* Togglable.swift in Sources */,
+				9A0B92FE1CB65A7A00271ACC /* ViewController+ShowBlue.swift in Sources */,
+				9A0B92F41CB64DCD00271ACC /* ModalViewController.swift in Sources */,
+				9A0B92FB1CB658CA00271ACC /* FeatureTogglableDecorator.swift in Sources */,
 				9A0B92D41CB64D5D00271ACC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "FeatureToggle-Proof-Of-Concept/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ktustanowski.FeatureToggle-Proof-Of-Concept";
@@ -342,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "FeatureToggle-Proof-Of-Concept/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ktustanowski.FeatureToggle-Proof-Of-Concept";
