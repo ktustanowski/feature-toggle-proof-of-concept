@@ -8,12 +8,23 @@
 
 import UIKit
 
-class CoolFeatureViewController: DismissableViewController {
+class CoolFeatureViewController: DismissableViewController, Togglable {
     
-    @IBOutlet weak var bottomMarginActivateConstraint: NSLayoutConstraint!
+    var decorate: (() -> ())?
+    
+    @IBOutlet weak var bottomMarginActivateButtonConstraint: NSLayoutConstraint!
     @IBOutlet weak var centerActiveButtonVerticallyConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var centerLabelVerticallyConstraint: NSLayoutConstraint!
     @IBOutlet weak var bottomLabelMarginConstraint: NSLayoutConstraint!
-
+    
+    override func awakeFromNib() {
+        FeatureTogglableDecorator.decorate(self)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        decorate?()
+    }
+    
 }

@@ -22,11 +22,16 @@ class FeatureTogglableDecorator {
         }
     }
     
-//    class func decorate(viewController: CoolFeatureViewController) {
-//        print("Decorated MVC")        
-//    }
-//
-//    class func decorate(viewController: AwesomeFeatureViewController) {
-//        print("Decorated MVC")
-//    }
+    class func decorate(viewController: CoolFeatureViewController) {
+        viewController.decorate = {
+            if let group = FeatureDecisions.abTest() {
+                viewController.performAbTest(group)
+            }
+        }
+    }
+
+    class func decorate(viewController: AwesomeFeatureViewController) {
+        print("Decorated MVC")
+    }
+
 }

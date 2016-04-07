@@ -15,7 +15,6 @@ class ViewController: UIViewController, Togglable {
     
     var decorate: (() -> ())?
     
-    
     override func awakeFromNib() {
         FeatureTogglableDecorator.decorate(self)
     }

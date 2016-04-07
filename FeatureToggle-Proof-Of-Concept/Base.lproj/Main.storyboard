@@ -75,13 +75,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fO4-mt-7p4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fO4-mt-7p4">
                                 <rect key="frame" x="288" y="19" width="25" height="561"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agS-DZ-74G">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agS-DZ-74G">
                                 <rect key="frame" x="236" y="550" width="129" height="30"/>
                                 <state key="normal" title="Activate Cool Stuff"/>
                             </button>
@@ -96,20 +96,13 @@
                             <constraint firstItem="agS-DZ-74G" firstAttribute="centerY" secondItem="5FF-pz-8UM" secondAttribute="centerY" id="jUK-Rt-yyR"/>
                             <constraint firstItem="rOS-nr-yNt" firstAttribute="top" secondItem="agS-DZ-74G" secondAttribute="bottom" constant="20" id="xeW-AV-OH2"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="jUK-Rt-yyR"/>
-                                <exclude reference="Cay-jG-Ali"/>
-                            </mask>
-                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="UQ5-oB-eJi" appends="YES" id="YQX-2j-vjb"/>
                         </connections>
                     </view>
                     <connections>
                         <outlet property="bottomLabelMarginConstraint" destination="Cay-jG-Ali" id="U0h-mi-UOI"/>
-                        <outlet property="bottomMarginActivateConstraint" destination="xeW-AV-OH2" id="0D0-5o-e3S"/>
-                        <outlet property="centerActivateButtonVertically" destination="jUK-Rt-yyR" id="Cgy-FV-rKQ"/>
+                        <outlet property="bottomMarginActivateButtonConstraint" destination="xeW-AV-OH2" id="FFc-h4-ORl"/>
                         <outlet property="centerActiveButtonVerticallyConstraint" destination="jUK-Rt-yyR" id="Nhv-yL-xzL"/>
                         <outlet property="centerLabelVerticallyConstraint" destination="dY8-ik-OZQ" id="iWV-Gm-PyN"/>
                     </connections>

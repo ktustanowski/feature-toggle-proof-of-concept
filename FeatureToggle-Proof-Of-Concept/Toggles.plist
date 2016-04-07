@@ -9,8 +9,8 @@
 	<key>awesome_feature_canary_ratio</key>
 	<real>1</real>
 	<key>ab_experiment</key>
-	<string>YES</string>
+	<true/>
 	<key>ab_experiment_ratio</key>
-	<real>1</real>
+	<real>0.5</real>
 </dict>
 </plist>
