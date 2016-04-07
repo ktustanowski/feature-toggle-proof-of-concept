@@ -17,14 +17,14 @@ struct FeatureDecisions {
     }
 
     static func awesomeFeature() -> Bool {
-        guard let ratio = toggleRouter.awesomeFeatureExperimentRatio else {
+        guard let awesomeFeatureEnabled = toggleRouter.awesomeFeature,
+            ratio = toggleRouter.awesomeFeatureCanaryRatio
+            where awesomeFeatureEnabled
+        else {
             return toggleRouter.awesomeFeature ?? false
         }
         
-        /* canary feature release */
         let randomNumber = Double(Int(arc4random_uniform(11))) / 10.0
-        print(randomNumber)
-        
         return  ratio >= randomNumber
     }
 

@@ -16,11 +16,14 @@ enum ABTestGroup {
 extension FeatureDecisions {
     
     static func abTest() -> ABTestGroup? {
-        guard let experimentEnabled = toggleRouter.abExperiment, let ratio = toggleRouter.abExperimentRatio where experimentEnabled
-            else { return nil }
+        guard let experimentEnabled = toggleRouter.abExperiment,
+            ratio = toggleRouter.abExperimentRatio
+            where experimentEnabled
+        else {
+            return nil
+        }
 
         let randomNumber = Double(Int(arc4random_uniform(11))) / 10.0
-        
         return ratio >= randomNumber ? .A : .B
     }
     

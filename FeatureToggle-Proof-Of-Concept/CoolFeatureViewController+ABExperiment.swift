@@ -14,8 +14,10 @@ extension CoolFeatureViewController {
         switch group {
         case .A:
             buttonInTheMiddle()
+            yellowButtonTitleColor()
         case .B:
             buttonOnBottom()
+            buttonWithBackground()
         }
     }
     
@@ -27,6 +29,10 @@ extension CoolFeatureViewController {
         bottomLabelMarginConstraint.active = true
     }
     
+    func yellowButtonTitleColor() {
+        self.view.tintColor = UIColor.yellowColor()
+    }
+    
     func buttonOnBottom() {
         bottomMarginActivateButtonConstraint.active = true
         centerLabelVerticallyConstraint.active = true
@@ -34,4 +40,10 @@ extension CoolFeatureViewController {
         centerActiveButtonVerticallyConstraint.active = false
         bottomLabelMarginConstraint.active = false
     }
+    
+    func buttonWithBackground() {
+        self.view.tintColor = self.view.backgroundColor
+        self.activateCoolStuffButton.backgroundColor = UIColor.yellowColor()
+    }
+
 }

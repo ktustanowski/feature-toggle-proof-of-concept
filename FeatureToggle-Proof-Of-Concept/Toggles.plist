@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>cool_feature</key>
-	<true/>
+	<false/>
 	<key>awesome_feature</key>
-	<string>YES</string>
+	<false/>
 	<key>awesome_feature_canary_ratio</key>
-	<real>1</real>
+	<real>0.5</real>
 	<key>ab_experiment</key>
-	<true/>
+	<false/>
 	<key>ab_experiment_ratio</key>
 	<real>0.5</real>
 </dict>

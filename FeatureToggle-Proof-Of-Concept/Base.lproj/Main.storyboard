@@ -101,6 +101,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="activateCoolStuffButton" destination="agS-DZ-74G" id="e0p-rD-aBV"/>
                         <outlet property="bottomLabelMarginConstraint" destination="Cay-jG-Ali" id="U0h-mi-UOI"/>
                         <outlet property="bottomMarginActivateButtonConstraint" destination="xeW-AV-OH2" id="FFc-h4-ORl"/>
                         <outlet property="centerActiveButtonVerticallyConstraint" destination="jUK-Rt-yyR" id="Nhv-yL-xzL"/>

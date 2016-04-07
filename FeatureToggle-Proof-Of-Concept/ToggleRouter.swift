@@ -14,7 +14,7 @@ struct ToggleRouter {
     var coolFeature: Bool?
     
     var awesomeFeature: Bool?
-    var awesomeFeatureExperimentRatio: Double?
+    var awesomeFeatureCanaryRatio: Double?
     
     var abExperiment: Bool?
     var abExperimentRatio: Double?
@@ -33,7 +33,7 @@ struct ToggleRouter {
         coolFeature = toggles["cool_feature"] as? Bool
         
         awesomeFeature = toggles["awesome_feature"] as? Bool
-        awesomeFeatureExperimentRatio = toggles["awesome_feature_canary_ratio"] as? Double
+        awesomeFeatureCanaryRatio = toggles["awesome_feature_canary_ratio"] as? Double
         
         abExperiment = toggles["ab_experiment"] as? Bool
         abExperimentRatio = toggles["ab_experiment_ratio"] as? Double

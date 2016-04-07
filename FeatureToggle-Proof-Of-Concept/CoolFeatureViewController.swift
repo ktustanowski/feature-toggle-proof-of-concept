@@ -12,6 +12,8 @@ class CoolFeatureViewController: DismissableViewController, Togglable {
     
     var decorate: (() -> ())?
     
+    @IBOutlet weak var activateCoolStuffButton: UIButton!
+    
     @IBOutlet weak var bottomMarginActivateButtonConstraint: NSLayoutConstraint!
     @IBOutlet weak var centerActiveButtonVerticallyConstraint: NSLayoutConstraint!
     

@@ -102,15 +102,15 @@
 			isa = PBXGroup;
 			children = (
 				9A0B92D31CB64D5D00271ACC /* AppDelegate.swift */,
-				9A0B92FC1CB65A3C00271ACC /* ViewController */,
-				9A0B92D71CB64D5D00271ACC /* Main.storyboard */,
-				9A0B92DA1CB64D5D00271ACC /* Assets.xcassets */,
-				9A0B92DC1CB64D5D00271ACC /* LaunchScreen.storyboard */,
-				9A0B92DF1CB64D5D00271ACC /* Info.plist */,
 				9A0B92F31CB64DCD00271ACC /* DismissablelViewController.swift */,
-				9A0B92F71CB6589600271ACC /* FeatureToggling */,
-				9A0B93091CB6743000271ACC /* CoolFeatureViewController */,
 				9A0B93071CB6702300271ACC /* AwesomeFeatureViewController.swift */,
+				9A0B92FC1CB65A3C00271ACC /* ViewController */,
+				9A0B93091CB6743000271ACC /* CoolFeatureViewController */,
+				9A0B92F71CB6589600271ACC /* FeatureToggling */,
+				9A0B92D71CB64D5D00271ACC /* Main.storyboard */,
+				9A0B92DC1CB64D5D00271ACC /* LaunchScreen.storyboard */,
+				9A0B92DA1CB64D5D00271ACC /* Assets.xcassets */,
+				9A0B92DF1CB64D5D00271ACC /* Info.plist */,
 			);
 			path = "FeatureToggle-Proof-Of-Concept";
 			sourceTree = "<group>";
@@ -465,6 +465,7 @@
 				9A0B92EF1CB64D5E00271ACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A0B92F01CB64D5E00271ACC /* Build configuration list for PBXNativeTarget "FeatureToggle-Proof-Of-ConceptTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +474,7 @@
 				9A0B92F21CB64D5E00271ACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
