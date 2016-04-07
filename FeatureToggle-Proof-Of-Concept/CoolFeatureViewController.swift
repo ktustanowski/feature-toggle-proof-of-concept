@@ -26,6 +26,7 @@ class CoolFeatureViewController: DismissableViewController, Togglable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        buttonOnBottom()
         decorate?()
     }
     

@@ -6,19 +6,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="0px-4c-HXH">
-            <objects>
-                <navigationController id="bGQ-1F-Ae7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sj5-dR-dAR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XbK-0k-Fbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1527" y="469"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>

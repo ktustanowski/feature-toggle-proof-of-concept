@@ -31,7 +31,7 @@ class FeatureTogglableDecorator {
     }
 
     class func decorate(viewController: AwesomeFeatureViewController) {
-        print("Decorated MVC")
+        /* do nothing yet */
     }
 
 }
