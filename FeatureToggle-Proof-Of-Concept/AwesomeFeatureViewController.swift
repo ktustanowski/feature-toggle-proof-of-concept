@@ -8,16 +8,14 @@
 
 import UIKit
 
-class AwesomeFeatureViewController: DismissableViewController, Togglable {
+class AwesomeFeatureViewController: IdentifiableViewController, Togglable {
     
     var decorate: (() -> ())?
     
     override func awakeFromNib() {
-        FeatureTogglableDecorator.decorate(self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        decorate?()
     }
 }

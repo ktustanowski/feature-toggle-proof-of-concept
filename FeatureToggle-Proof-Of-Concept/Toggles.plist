@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>colorfull_advertisment</key>
+	<true/>
 	<key>amazing_feature</key>
-	<string>YES</string>
+	<true/>
 	<key>crazy_feature</key>
-	<string>YES</string>
+	<true/>
 	<key>cool_feature</key>
 	<false/>
 	<key>awesome_feature</key>

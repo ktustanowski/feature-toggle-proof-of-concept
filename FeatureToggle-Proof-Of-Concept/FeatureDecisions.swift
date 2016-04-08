@@ -24,6 +24,10 @@ struct FeatureDecisions {
         return toggleRouter.crazyFeature ?? false
     }
 
+    static func colorfullAdvertisment() -> Bool {
+        return toggleRouter.colorfullAdvertisment ?? false
+    }
+
     static func awesomeFeature() -> Bool {
         guard let awesomeFeatureEnabled = toggleRouter.awesomeFeature,
             ratio = toggleRouter.awesomeFeatureCanaryRatio
@@ -35,5 +39,5 @@ struct FeatureDecisions {
         let randomNumber = Double(Int(arc4random_uniform(11))) / 10.0
         return  ratio >= randomNumber
     }
-
+    
 }

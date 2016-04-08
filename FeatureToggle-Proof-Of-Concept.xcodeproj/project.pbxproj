@@ -25,8 +25,13 @@
 		9A0B93081CB6702300271ACC /* AwesomeFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B93071CB6702300271ACC /* AwesomeFeatureViewController.swift */; };
 		9A0B930B1CB6745300271ACC /* CoolFeatureViewController+ABExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B930A1CB6745300271ACC /* CoolFeatureViewController+ABExperiment.swift */; };
 		9A0B930F1CB6750000271ACC /* FeatureDecisions+Experiments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B930E1CB6750000271ACC /* FeatureDecisions+Experiments.swift */; };
+		9A35AF301CB7C14000A73359 /* NSDate+CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35AF2F1CB7C14000A73359 /* NSDate+CurrentTime.swift */; };
+		9A35AF321CB7C83C00A73359 /* CrazyFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35AF311CB7C83C00A73359 /* CrazyFeatureViewController.swift */; };
+		9A35AF341CB7CB6E00A73359 /* IdentifiableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35AF331CB7CB6E00A73359 /* IdentifiableViewController.swift */; };
 		9AA5E0A61CB79C000010A535 /* ViewController+AmazingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0A51CB79C000010A535 /* ViewController+AmazingFeature.swift */; };
 		9AA5E0A81CB7A0D10010A535 /* ViewController+CrazyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0A71CB7A0D10010A535 /* ViewController+CrazyFeature.swift */; };
+		9AA5E0AC1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0AB1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift */; };
+		9AA5E0AE1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0AD1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +67,13 @@
 		9A0B93071CB6702300271ACC /* AwesomeFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeFeatureViewController.swift; sourceTree = "<group>"; };
 		9A0B930A1CB6745300271ACC /* CoolFeatureViewController+ABExperiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoolFeatureViewController+ABExperiment.swift"; sourceTree = "<group>"; };
 		9A0B930E1CB6750000271ACC /* FeatureDecisions+Experiments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureDecisions+Experiments.swift"; sourceTree = "<group>"; };
+		9A35AF2F1CB7C14000A73359 /* NSDate+CurrentTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+CurrentTime.swift"; sourceTree = "<group>"; };
+		9A35AF311CB7C83C00A73359 /* CrazyFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrazyFeatureViewController.swift; sourceTree = "<group>"; };
+		9A35AF331CB7CB6E00A73359 /* IdentifiableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableViewController.swift; sourceTree = "<group>"; };
 		9AA5E0A51CB79C000010A535 /* ViewController+AmazingFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+AmazingFeature.swift"; sourceTree = "<group>"; };
 		9AA5E0A71CB7A0D10010A535 /* ViewController+CrazyFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CrazyFeature.swift"; sourceTree = "<group>"; };
+		9AA5E0AB1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureTogglableDecorator+ViewController.swift"; sourceTree = "<group>"; };
+		9AA5E0AD1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureTogglableDecorator+CoolFeatureViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,7 @@
 				9A0B92D31CB64D5D00271ACC /* AppDelegate.swift */,
 				9A0B92F31CB64DCD00271ACC /* DismissablelViewController.swift */,
 				9A0B93071CB6702300271ACC /* AwesomeFeatureViewController.swift */,
+				9A35AF311CB7C83C00A73359 /* CrazyFeatureViewController.swift */,
 				9A0B92FC1CB65A3C00271ACC /* ViewController */,
 				9A0B93091CB6743000271ACC /* CoolFeatureViewController */,
 				9A0B92F71CB6589600271ACC /* FeatureToggling */,
@@ -115,6 +126,8 @@
 				9A0B92DC1CB64D5D00271ACC /* LaunchScreen.storyboard */,
 				9A0B92DA1CB64D5D00271ACC /* Assets.xcassets */,
 				9A0B92DF1CB64D5D00271ACC /* Info.plist */,
+				9A35AF2F1CB7C14000A73359 /* NSDate+CurrentTime.swift */,
+				9A35AF331CB7CB6E00A73359 /* IdentifiableViewController.swift */,
 			);
 			path = "FeatureToggle-Proof-Of-Concept";
 			sourceTree = "<group>";
@@ -132,9 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				9A0B92F51CB6586B00271ACC /* ToggleRouter.swift */,
-				9A0B92F81CB658B200271ACC /* FeatureDecisions.swift */,
-				9A0B930E1CB6750000271ACC /* FeatureDecisions+Experiments.swift */,
-				9A0B92FA1CB658CA00271ACC /* FeatureTogglableDecorator.swift */,
+				9AA5E0A91CB7AA620010A535 /* FeatureDecisions */,
+				9AA5E0AA1CB7AAAB0010A535 /* FeatureTogglableDecorator */,
 				9A0B92FF1CB65D6000271ACC /* Togglable.swift */,
 				9A0B93011CB65F1000271ACC /* Toggles.plist */,
 			);
@@ -160,6 +172,25 @@
 				9A0B930A1CB6745300271ACC /* CoolFeatureViewController+ABExperiment.swift */,
 			);
 			name = CoolFeatureViewController;
+			sourceTree = "<group>";
+		};
+		9AA5E0A91CB7AA620010A535 /* FeatureDecisions */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B92F81CB658B200271ACC /* FeatureDecisions.swift */,
+				9A0B930E1CB6750000271ACC /* FeatureDecisions+Experiments.swift */,
+			);
+			name = FeatureDecisions;
+			sourceTree = "<group>";
+		};
+		9AA5E0AA1CB7AAAB0010A535 /* FeatureTogglableDecorator */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B92FA1CB658CA00271ACC /* FeatureTogglableDecorator.swift */,
+				9AA5E0AD1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift */,
+				9AA5E0AB1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift */,
+			);
+			name = FeatureTogglableDecorator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,15 +299,20 @@
 				9A0B92F91CB658B200271ACC /* FeatureDecisions.swift in Sources */,
 				9A0B92F61CB6586B00271ACC /* ToggleRouter.swift in Sources */,
 				9AA5E0A81CB7A0D10010A535 /* ViewController+CrazyFeature.swift in Sources */,
+				9AA5E0AC1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift in Sources */,
 				9A0B92D61CB64D5D00271ACC /* ViewController.swift in Sources */,
 				9A0B93001CB65D6000271ACC /* Togglable.swift in Sources */,
 				9A0B92FE1CB65A7A00271ACC /* ViewController+CoolFeature.swift in Sources */,
 				9A0B92F41CB64DCD00271ACC /* DismissablelViewController.swift in Sources */,
 				9A0B92FB1CB658CA00271ACC /* FeatureTogglableDecorator.swift in Sources */,
+				9A35AF321CB7C83C00A73359 /* CrazyFeatureViewController.swift in Sources */,
+				9A35AF301CB7C14000A73359 /* NSDate+CurrentTime.swift in Sources */,
+				9AA5E0AE1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift in Sources */,
 				9A0B93041CB6683600271ACC /* ViewController+AwesomeFeature.swift in Sources */,
 				9A0B93061CB6701500271ACC /* CoolFeatureViewController.swift in Sources */,
 				9AA5E0A61CB79C000010A535 /* ViewController+AmazingFeature.swift in Sources */,
 				9A0B92D41CB64D5D00271ACC /* AppDelegate.swift in Sources */,
+				9A35AF341CB7CB6E00A73359 /* IdentifiableViewController.swift in Sources */,
 				9A0B930B1CB6745300271ACC /* CoolFeatureViewController+ABExperiment.swift in Sources */,
 				9A0B93081CB6702300271ACC /* AwesomeFeatureViewController.swift in Sources */,
 				9A0B930F1CB6750000271ACC /* FeatureDecisions+Experiments.swift in Sources */,

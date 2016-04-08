@@ -30,22 +30,47 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="c2n-Hw-Kt1">
+                                <rect key="frame" x="20" y="285" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="eDY-4w-i2K"/>
+                                </constraints>
+                                <state key="normal" title="Tap to show crazy feature">
+                                    <color key="titleColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-xz-cd9">
+                                <rect key="frame" x="20" y="20" width="560" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aul-hN-5wn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ak4-xz-cd9" firstAttribute="leading" secondItem="c2n-Hw-Kt1" secondAttribute="leading" id="8q1-gd-Gd4"/>
+                            <constraint firstItem="c2n-Hw-Kt1" firstAttribute="centerY" secondItem="zxn-Jt-wsU" secondAttribute="centerY" id="Ekh-Ut-NwV"/>
                             <constraint firstItem="hHb-ip-Ilc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Icz-lT-ucx"/>
+                            <constraint firstItem="ak4-xz-cd9" firstAttribute="trailing" secondItem="zxn-Jt-wsU" secondAttribute="trailing" id="OoM-Tf-1tE"/>
                             <constraint firstItem="zxn-Jt-wsU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Qwa-FN-whI"/>
+                            <constraint firstItem="c2n-Hw-Kt1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ddi-GI-OJG"/>
                             <constraint firstItem="zxn-Jt-wsU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iEk-Wk-Xjh"/>
+                            <constraint firstItem="ak4-xz-cd9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uDu-yl-NIG"/>
                             <constraint firstAttribute="bottom" secondItem="hHb-ip-Ilc" secondAttribute="bottom" constant="20" symbolic="YES" id="wnb-aG-a5A"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomLabel" destination="hHb-ip-Ilc" id="MMr-dW-X9U"/>
+                        <outlet property="leftButton" destination="c2n-Hw-Kt1" id="0Er-Rk-wx0"/>
                         <outlet property="rightLabel" destination="zxn-Jt-wsU" id="Wtv-6x-v9V"/>
+                        <outlet property="topLabel" destination="ak4-xz-cd9" id="Sjd-Hx-eB3"/>
                         <segue destination="hje-Q4-VEe" kind="presentation" identifier="ShowCoolFeature" id="nTR-RZ-ovI"/>
                         <segue destination="SUg-vQ-Aed" kind="presentation" identifier="ShowAwesomeFeature" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="0b7-Ei-QgA"/>
                         <segue destination="xCK-SU-0Je" kind="presentation" identifier="ShowAmazingFeature" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Fje-uX-3Jm"/>
-                        <segue destination="QyZ-ug-DPa" kind="presentation" id="FLd-Nv-4qc"/>
+                        <segue destination="QyZ-ug-DPa" kind="presentation" identifier="ShowCrazyFeature" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="FLd-Nv-4qc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -124,11 +149,23 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubk-Lc-Gw3">
+                                <rect key="frame" x="20" y="20" width="560" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="yEG-EO-KRS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="ubk-Lc-Gw3" firstAttribute="top" secondItem="6D9-No-32d" secondAttribute="bottom" id="0ye-7n-QAp"/>
+                            <constraint firstItem="ubk-Lc-Gw3" firstAttribute="centerX" secondItem="rFO-QA-3Nd" secondAttribute="centerX" id="LhF-8m-Vyi"/>
                             <constraint firstItem="rFO-QA-3Nd" firstAttribute="centerY" secondItem="wkZ-bg-vDC" secondAttribute="centerY" id="VOk-i3-YHF"/>
+                            <constraint firstItem="ubk-Lc-Gw3" firstAttribute="leading" secondItem="wkZ-bg-vDC" secondAttribute="leadingMargin" id="dhL-rr-XLv"/>
                             <constraint firstItem="rFO-QA-3Nd" firstAttribute="centerX" secondItem="wkZ-bg-vDC" secondAttribute="centerX" id="o3k-QQ-LhF"/>
                         </constraints>
                         <connections>
@@ -136,6 +173,9 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="KQK-9I-WFB"/>
+                    <connections>
+                        <outlet property="topLabel" destination="ubk-Lc-Gw3" id="1jG-ao-Uuc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJX-mW-Ce9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="R7G-vT-OTq">
@@ -149,7 +189,7 @@
         <!--Item 2-->
         <scene sceneID="9BM-is-5BZ">
             <objects>
-                <viewController id="rTH-wb-xL6" customClass="DismissableViewController" customModule="FeatureToggle_Proof_Of_Concept" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rTH-wb-xL6" customClass="IdentifiableViewController" customModule="FeatureToggle_Proof_Of_Concept" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gqC-iO-l3T"/>
                         <viewControllerLayoutGuide type="bottom" id="j1C-NM-63y"/>
@@ -164,18 +204,33 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1X-co-OWL">
+                                <rect key="frame" x="20" y="20" width="560" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="5NO-08-o9F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Eo6-7R-0G4" firstAttribute="centerY" secondItem="86p-2b-tRR" secondAttribute="centerY" id="3tY-Fp-sf5"/>
+                            <constraint firstItem="c1X-co-OWL" firstAttribute="centerX" secondItem="Eo6-7R-0G4" secondAttribute="centerX" id="M0R-3C-jEh"/>
+                            <constraint firstItem="c1X-co-OWL" firstAttribute="leading" secondItem="86p-2b-tRR" secondAttribute="leadingMargin" id="SB3-0N-VZT"/>
                             <constraint firstItem="Eo6-7R-0G4" firstAttribute="centerX" secondItem="86p-2b-tRR" secondAttribute="centerX" id="hIc-LB-2x8"/>
+                            <constraint firstItem="c1X-co-OWL" firstAttribute="top" secondItem="gqC-iO-l3T" secondAttribute="bottom" id="qwf-ot-CFR"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="bWI-uI-J5e" appends="YES" id="peq-Ay-8f3"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="ph2-qe-nIC"/>
+                    <connections>
+                        <outlet property="topLabel" destination="c1X-co-OWL" id="dED-Xy-2Qx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4y5-jo-9ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="bWI-uI-J5e">
@@ -186,13 +241,13 @@
             </objects>
             <point key="canvasLocation" x="1008" y="1881"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Crazy Feature View Controller-->
         <scene sceneID="33Z-rb-IDb">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="QyZ-ug-DPa" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="1" navigationOrientation="horizontal" spineLocation="min" doubleSided="YES" id="QyZ-ug-DPa" customClass="CrazyFeatureViewController" customModule="FeatureToggle_Proof_Of_Concept" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2v8-Xo-1FE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-753" y="1479"/>
+            <point key="canvasLocation" x="-833" y="1252"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mIQ-ga-qYB">
@@ -214,6 +269,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0b7-Ei-QgA"/>
+        <segue reference="6Wq-DF-75E"/>
     </inferredMetricsTieBreakers>
 </document>
