@@ -33,7 +33,7 @@ extension CrazyFeatureViewController: UIPageViewControllerDataSource {
     }
     
     func itemViewController() -> UIViewController? {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "AmazingFeature", bundle: nil)
         guard let itemViewController = storyboard.instantiateViewControllerWithIdentifier("AmazingFeatureViewController") as? UITabBarController else { return nil }
         
         let randomIdentifier = String(Int(arc4random_uniform(256)))

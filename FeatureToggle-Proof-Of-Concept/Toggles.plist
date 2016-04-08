@@ -9,13 +9,13 @@
 	<key>crazy_feature</key>
 	<true/>
 	<key>cool_feature</key>
-	<false/>
+	<true/>
 	<key>awesome_feature</key>
 	<false/>
 	<key>awesome_feature_canary_ratio</key>
 	<integer>1</integer>
 	<key>ab_experiment</key>
-	<false/>
+	<true/>
 	<key>ab_experiment_ratio</key>
 	<real>0.5</real>
 </dict>

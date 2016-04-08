@@ -28,6 +28,8 @@
 		9A35AF301CB7C14000A73359 /* NSDate+CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35AF2F1CB7C14000A73359 /* NSDate+CurrentTime.swift */; };
 		9A35AF321CB7C83C00A73359 /* CrazyFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35AF311CB7C83C00A73359 /* CrazyFeatureViewController.swift */; };
 		9A35AF341CB7CB6E00A73359 /* IdentifiableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35AF331CB7CB6E00A73359 /* IdentifiableViewController.swift */; };
+		9A35AF3A1CB7DCB200A73359 /* AmazingFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A35AF391CB7DCB200A73359 /* AmazingFeature.storyboard */; };
+		9A35AF3C1CB7DD6E00A73359 /* Full.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A35AF3B1CB7DD6E00A73359 /* Full.storyboard */; };
 		9AA5E0A61CB79C000010A535 /* ViewController+AmazingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0A51CB79C000010A535 /* ViewController+AmazingFeature.swift */; };
 		9AA5E0A81CB7A0D10010A535 /* ViewController+CrazyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0A71CB7A0D10010A535 /* ViewController+CrazyFeature.swift */; };
 		9AA5E0AC1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0AB1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift */; };
@@ -70,6 +72,8 @@
 		9A35AF2F1CB7C14000A73359 /* NSDate+CurrentTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+CurrentTime.swift"; sourceTree = "<group>"; };
 		9A35AF311CB7C83C00A73359 /* CrazyFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrazyFeatureViewController.swift; sourceTree = "<group>"; };
 		9A35AF331CB7CB6E00A73359 /* IdentifiableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableViewController.swift; sourceTree = "<group>"; };
+		9A35AF391CB7DCB200A73359 /* AmazingFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AmazingFeature.storyboard; sourceTree = "<group>"; };
+		9A35AF3B1CB7DD6E00A73359 /* Full.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Full.storyboard; path = ../Full.storyboard; sourceTree = "<group>"; };
 		9AA5E0A51CB79C000010A535 /* ViewController+AmazingFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+AmazingFeature.swift"; sourceTree = "<group>"; };
 		9AA5E0A71CB7A0D10010A535 /* ViewController+CrazyFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CrazyFeature.swift"; sourceTree = "<group>"; };
 		9AA5E0AB1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureTogglableDecorator+ViewController.swift"; sourceTree = "<group>"; };
@@ -123,7 +127,9 @@
 				9A0B93091CB6743000271ACC /* CoolFeatureViewController */,
 				9A0B92F71CB6589600271ACC /* FeatureToggling */,
 				9A0B92D71CB64D5D00271ACC /* Main.storyboard */,
+				9A35AF391CB7DCB200A73359 /* AmazingFeature.storyboard */,
 				9A0B92DC1CB64D5D00271ACC /* LaunchScreen.storyboard */,
+				9A35AF3B1CB7DD6E00A73359 /* Full.storyboard */,
 				9A0B92DA1CB64D5D00271ACC /* Assets.xcassets */,
 				9A0B92DF1CB64D5D00271ACC /* Info.plist */,
 				9A35AF2F1CB7C14000A73359 /* NSDate+CurrentTime.swift */,
@@ -275,10 +281,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A35AF3A1CB7DCB200A73359 /* AmazingFeature.storyboard in Resources */,
 				9A0B93021CB65F1000271ACC /* Toggles.plist in Resources */,
 				9A0B92DE1CB64D5D00271ACC /* LaunchScreen.storyboard in Resources */,
 				9A0B92DB1CB64D5D00271ACC /* Assets.xcassets in Resources */,
 				9A0B92D91CB64D5D00271ACC /* Main.storyboard in Resources */,
+				9A35AF3C1CB7DD6E00A73359 /* Full.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
