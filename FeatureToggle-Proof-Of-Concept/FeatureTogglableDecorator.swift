@@ -12,13 +12,21 @@ class FeatureTogglableDecorator {
         
     class func decorate(viewController: ViewController) {
         viewController.decorate = {
-            if (FeatureDecisions.coolFeature()) {
+            if FeatureDecisions.coolFeature() {
                 viewController.enableCoolFeature()
             }
             
-            if (FeatureDecisions.awesomeFeature()) {
-                viewController.enableAwesomeFeature()
+            if FeatureDecisions.crazyFeature() {
+                viewController.enableCrazyFeature()
             }
+            
+            /* when features are excluding each other - which should never be done - adds unnecessary complexity */
+            if FeatureDecisions.awesomeFeature() {
+                viewController.enableAwesomeFeature()
+            } else if FeatureDecisions.amazingFeature() {
+                viewController.enableAmazingFeature()
+            }
+            
         }
     }
     

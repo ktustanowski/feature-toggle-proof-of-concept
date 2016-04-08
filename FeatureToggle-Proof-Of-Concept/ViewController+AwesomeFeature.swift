@@ -11,14 +11,14 @@ import UIKit
 extension ViewController {
     
     func enableAwesomeFeature() {
-        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:#selector(swipedLeft(_:)))
+        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:#selector(showAwesomeFeature(_:)))
         swipeGestureRecognizer.direction = .Left
         view.addGestureRecognizer(swipeGestureRecognizer)
         
         rightLabel.hidden = false
     }
     
-    func swipedLeft(recognizer: UISwipeGestureRecognizer) {
+    func showAwesomeFeature(recognizer: UISwipeGestureRecognizer) {
         performSegueWithIdentifier("ShowAwesomeFeature", sender: nil)
     }
     

@@ -18,7 +18,11 @@ struct ToggleRouter {
     
     var abExperiment: Bool?
     var abExperimentRatio: Double?
-    
+
+    var amazingFeature: Bool?
+
+    var crazyFeature: Bool?
+
     init() {
         configureFromLocalSource()
     }
@@ -37,6 +41,10 @@ struct ToggleRouter {
         
         abExperiment = toggles["ab_experiment"] as? Bool
         abExperimentRatio = toggles["ab_experiment_ratio"] as? Double
+        
+        amazingFeature = toggles["amazing_feature"] as? Bool
+
+        crazyFeature = toggles["crazy_feature"] as? Bool
     }
     
 }

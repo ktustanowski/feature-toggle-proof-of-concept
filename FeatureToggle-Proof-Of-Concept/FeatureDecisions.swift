@@ -16,6 +16,14 @@ struct FeatureDecisions {
         return toggleRouter.coolFeature ?? false
     }
 
+    static func amazingFeature() -> Bool {
+        return toggleRouter.amazingFeature ?? false
+    }
+
+    static func crazyFeature() -> Bool {
+        return toggleRouter.crazyFeature ?? false
+    }
+
     static func awesomeFeature() -> Bool {
         guard let awesomeFeatureEnabled = toggleRouter.awesomeFeature,
             ratio = toggleRouter.awesomeFeatureCanaryRatio

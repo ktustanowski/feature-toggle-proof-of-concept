@@ -11,14 +11,14 @@ import UIKit
 extension ViewController {
     
     func enableCoolFeature() {
-        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:#selector(swipedUp(_:)))
+        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:#selector(showCoolFeature(_:)))
         swipeGestureRecognizer.direction = .Up
         view.addGestureRecognizer(swipeGestureRecognizer)
         
         bottomLabel.hidden = false
     }
     
-    func swipedUp(recognizer: UISwipeGestureRecognizer) {
+    func showCoolFeature(recognizer: UISwipeGestureRecognizer) {
         performSegueWithIdentifier("ShowCoolFeature", sender: nil)
     }
     
