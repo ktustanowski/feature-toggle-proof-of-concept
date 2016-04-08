@@ -11,11 +11,8 @@ import UIKit
 extension ViewController {
     
     func enableCrazyFeature() {
-        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:#selector(showCrazyFeature(_:)))
-        swipeGestureRecognizer.direction = .Right
-        view.addGestureRecognizer(swipeGestureRecognizer)
-        
-        bottomLabel.hidden = false
+        leftButton.addTarget(self, action: #selector(showCrazyFeature(_:)), forControlEvents: .TouchUpInside)
+        leftButton.hidden = false
     }
     
     func showCrazyFeature(recognizer: UISwipeGestureRecognizer) {
