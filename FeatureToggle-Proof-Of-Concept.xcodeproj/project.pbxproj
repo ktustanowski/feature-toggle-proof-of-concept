@@ -34,9 +34,6 @@
 		9AA5E0AC1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0AB1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift */; };
 		9AA5E0AE1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0AD1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift */; };
 		9ADAB7601CBD1331000BC032 /* Full.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAB75F1CBD1331000BC032 /* Full.storyboard */; };
-		9ADAB7641CBD13B4000BC032 /* Feature Toggle Sequence Region Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAB7611CBD13B4000BC032 /* Feature Toggle Sequence Region Check.png */; };
-		9ADAB7651CBD13B4000BC032 /* Feature Toggle Sequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAB7621CBD13B4000BC032 /* Feature Toggle Sequence.png */; };
-		9ADAB7661CBD13B4000BC032 /* Feature Toggling.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAB7631CBD13B4000BC032 /* Feature Toggling.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -298,13 +295,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ADAB7641CBD13B4000BC032 /* Feature Toggle Sequence Region Check.png in Resources */,
 				9A35AF3A1CB7DCB200A73359 /* AmazingFeature.storyboard in Resources */,
 				9A0B93021CB65F1000271ACC /* Toggles.plist in Resources */,
 				9A0B92DE1CB64D5D00271ACC /* LaunchScreen.storyboard in Resources */,
-				9ADAB7661CBD13B4000BC032 /* Feature Toggling.png in Resources */,
 				9A0B92DB1CB64D5D00271ACC /* Assets.xcassets in Resources */,
-				9ADAB7651CBD13B4000BC032 /* Feature Toggle Sequence.png in Resources */,
 				9A0B92D91CB64D5D00271ACC /* Main.storyboard in Resources */,
 				9ADAB7601CBD1331000BC032 /* Full.storyboard in Resources */,
 			);
