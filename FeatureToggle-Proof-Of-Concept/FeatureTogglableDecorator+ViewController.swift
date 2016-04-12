@@ -20,10 +20,11 @@ extension FeatureTogglableDecorator {
                 viewController?.enableCrazyFeature()
             }
             
-            /* exluding features should *never* be done - this adds unnecessary complexity and is error prone */
             if FeatureDecisions.awesomeFeature() {
                 viewController?.enableAwesomeFeature()
-            } else if FeatureDecisions.amazingFeature() {
+            }
+            
+            if FeatureDecisions.amazingFeature() {
                 viewController?.enableAmazingFeature()
             }
             

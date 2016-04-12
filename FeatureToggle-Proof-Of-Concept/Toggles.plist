@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>colorfull_advertisment</key>
-	<true/>
+	<false/>
 	<key>amazing_feature</key>
-	<true/>
+	<false/>
 	<key>crazy_feature</key>
-	<true/>
+	<false/>
 	<key>cool_feature</key>
-	<true/>
+	<false/>
 	<key>awesome_feature</key>
 	<false/>
 	<key>awesome_feature_canary_ratio</key>

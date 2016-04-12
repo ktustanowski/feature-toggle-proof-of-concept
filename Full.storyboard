@@ -184,17 +184,11 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2048" y="466"/>
+            <point key="canvasLocation" x="2044" y="486"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="4ke-dq-uqA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hH0-dM-Ogc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="BCu-g5-tYe">
-                    <connections>
-                        <action selector="dismiss" destination="RWp-a5-LZk" id="dfC-LE-pgB"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <viewController id="RWp-a5-LZk" customClass="IdentifiableViewController" customModule="FeatureToggle_Proof_Of_Concept" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BEQ-LC-D83"/>
@@ -238,6 +232,12 @@
                         <outlet property="topLabel" destination="kez-ar-aH3" id="q1A-Ae-I2N"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hH0-dM-Ogc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BCu-g5-tYe">
+                    <connections>
+                        <action selector="dismiss" destination="RWp-a5-LZk" id="dfC-LE-pgB"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1008" y="1881"/>
         </scene>
@@ -252,7 +252,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="jVp-yx-dzJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f4o-e4-ht6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="AmazingFeatureViewController" id="Be4-6Q-rHZ" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="PZG-fD-xvZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -264,11 +263,12 @@
                         <segue destination="tc4-r8-bWe" kind="relationship" relationship="viewControllers" id="e0D-Pt-n7I"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4o-e4-ht6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1008" y="945"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="e0D-Pt-n7I"/>
+        <segue reference="7Hk-IY-BxC"/>
     </inferredMetricsTieBreakers>
 </document>
