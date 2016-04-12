@@ -129,7 +129,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-74" y="1244"/>
+            <point key="canvasLocation" x="-960" y="1248"/>
         </scene>
         <!--Crazy Feature View Controller-->
         <scene sceneID="33Z-rb-IDb">
@@ -137,7 +137,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="1" navigationOrientation="horizontal" spineLocation="min" doubleSided="YES" id="QyZ-ug-DPa" customClass="CrazyFeatureViewController" customModule="FeatureToggle_Proof_Of_Concept" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2v8-Xo-1FE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-799" y="1244"/>
+            <point key="canvasLocation" x="-74" y="1248"/>
         </scene>
         <!--AwesomeFeatureViewController-->
         <scene sceneID="qJv-NF-U3r">

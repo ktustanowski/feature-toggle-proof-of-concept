@@ -29,11 +29,14 @@
 		9A35AF321CB7C83C00A73359 /* CrazyFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35AF311CB7C83C00A73359 /* CrazyFeatureViewController.swift */; };
 		9A35AF341CB7CB6E00A73359 /* IdentifiableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35AF331CB7CB6E00A73359 /* IdentifiableViewController.swift */; };
 		9A35AF3A1CB7DCB200A73359 /* AmazingFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A35AF391CB7DCB200A73359 /* AmazingFeature.storyboard */; };
-		9A35AF3C1CB7DD6E00A73359 /* Full.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A35AF3B1CB7DD6E00A73359 /* Full.storyboard */; };
 		9AA5E0A61CB79C000010A535 /* ViewController+AmazingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0A51CB79C000010A535 /* ViewController+AmazingFeature.swift */; };
 		9AA5E0A81CB7A0D10010A535 /* ViewController+CrazyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0A71CB7A0D10010A535 /* ViewController+CrazyFeature.swift */; };
 		9AA5E0AC1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0AB1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift */; };
 		9AA5E0AE1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5E0AD1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift */; };
+		9ADAB7601CBD1331000BC032 /* Full.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAB75F1CBD1331000BC032 /* Full.storyboard */; };
+		9ADAB7641CBD13B4000BC032 /* Feature Toggle Sequence Region Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAB7611CBD13B4000BC032 /* Feature Toggle Sequence Region Check.png */; };
+		9ADAB7651CBD13B4000BC032 /* Feature Toggle Sequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAB7621CBD13B4000BC032 /* Feature Toggle Sequence.png */; };
+		9ADAB7661CBD13B4000BC032 /* Feature Toggling.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAB7631CBD13B4000BC032 /* Feature Toggling.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,11 +76,14 @@
 		9A35AF311CB7C83C00A73359 /* CrazyFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrazyFeatureViewController.swift; sourceTree = "<group>"; };
 		9A35AF331CB7CB6E00A73359 /* IdentifiableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableViewController.swift; sourceTree = "<group>"; };
 		9A35AF391CB7DCB200A73359 /* AmazingFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AmazingFeature.storyboard; sourceTree = "<group>"; };
-		9A35AF3B1CB7DD6E00A73359 /* Full.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Full.storyboard; path = ../Full.storyboard; sourceTree = "<group>"; };
 		9AA5E0A51CB79C000010A535 /* ViewController+AmazingFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+AmazingFeature.swift"; sourceTree = "<group>"; };
 		9AA5E0A71CB7A0D10010A535 /* ViewController+CrazyFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CrazyFeature.swift"; sourceTree = "<group>"; };
 		9AA5E0AB1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureTogglableDecorator+ViewController.swift"; sourceTree = "<group>"; };
 		9AA5E0AD1CB7AB3A0010A535 /* FeatureTogglableDecorator+CoolFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureTogglableDecorator+CoolFeatureViewController.swift"; sourceTree = "<group>"; };
+		9ADAB75F1CBD1331000BC032 /* Full.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Full.storyboard; sourceTree = "<group>"; };
+		9ADAB7611CBD13B4000BC032 /* Feature Toggle Sequence Region Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feature Toggle Sequence Region Check.png"; path = "Diagrams/Feature Toggle Sequence Region Check.png"; sourceTree = "<group>"; };
+		9ADAB7621CBD13B4000BC032 /* Feature Toggle Sequence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feature Toggle Sequence.png"; path = "Diagrams/Feature Toggle Sequence.png"; sourceTree = "<group>"; };
+		9ADAB7631CBD13B4000BC032 /* Feature Toggling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feature Toggling.png"; path = "Diagrams/Feature Toggling.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		9A0B92C71CB64D5D00271ACC = {
 			isa = PBXGroup;
 			children = (
+				9ADAB7671CBD13BC000BC032 /* Diagrams */,
 				9A0B92D21CB64D5D00271ACC /* FeatureToggle-Proof-Of-Concept */,
 				9A0B92E71CB64D5D00271ACC /* FeatureToggle-Proof-Of-ConceptTests */,
 				9A0B92D11CB64D5D00271ACC /* Products */,
@@ -119,6 +126,7 @@
 		9A0B92D21CB64D5D00271ACC /* FeatureToggle-Proof-Of-Concept */ = {
 			isa = PBXGroup;
 			children = (
+				9ADAB75F1CBD1331000BC032 /* Full.storyboard */,
 				9A0B92D31CB64D5D00271ACC /* AppDelegate.swift */,
 				9A0B92F31CB64DCD00271ACC /* DismissablelViewController.swift */,
 				9A0B93071CB6702300271ACC /* AwesomeFeatureViewController.swift */,
@@ -129,7 +137,6 @@
 				9A0B92D71CB64D5D00271ACC /* Main.storyboard */,
 				9A35AF391CB7DCB200A73359 /* AmazingFeature.storyboard */,
 				9A0B92DC1CB64D5D00271ACC /* LaunchScreen.storyboard */,
-				9A35AF3B1CB7DD6E00A73359 /* Full.storyboard */,
 				9A0B92DA1CB64D5D00271ACC /* Assets.xcassets */,
 				9A0B92DF1CB64D5D00271ACC /* Info.plist */,
 				9A35AF2F1CB7C14000A73359 /* NSDate+CurrentTime.swift */,
@@ -197,6 +204,16 @@
 				9AA5E0AB1CB7AADF0010A535 /* FeatureTogglableDecorator+ViewController.swift */,
 			);
 			name = FeatureTogglableDecorator;
+			sourceTree = "<group>";
+		};
+		9ADAB7671CBD13BC000BC032 /* Diagrams */ = {
+			isa = PBXGroup;
+			children = (
+				9ADAB7611CBD13B4000BC032 /* Feature Toggle Sequence Region Check.png */,
+				9ADAB7621CBD13B4000BC032 /* Feature Toggle Sequence.png */,
+				9ADAB7631CBD13B4000BC032 /* Feature Toggling.png */,
+			);
+			name = Diagrams;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,12 +298,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADAB7641CBD13B4000BC032 /* Feature Toggle Sequence Region Check.png in Resources */,
 				9A35AF3A1CB7DCB200A73359 /* AmazingFeature.storyboard in Resources */,
 				9A0B93021CB65F1000271ACC /* Toggles.plist in Resources */,
 				9A0B92DE1CB64D5D00271ACC /* LaunchScreen.storyboard in Resources */,
+				9ADAB7661CBD13B4000BC032 /* Feature Toggling.png in Resources */,
 				9A0B92DB1CB64D5D00271ACC /* Assets.xcassets in Resources */,
+				9ADAB7651CBD13B4000BC032 /* Feature Toggle Sequence.png in Resources */,
 				9A0B92D91CB64D5D00271ACC /* Main.storyboard in Resources */,
-				9A35AF3C1CB7DD6E00A73359 /* Full.storyboard in Resources */,
+				9ADAB7601CBD1331000BC032 /* Full.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
