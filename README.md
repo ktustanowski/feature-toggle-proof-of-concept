@@ -17,12 +17,11 @@ FeatureDecisions object responsibility is determine whether a feature should be 
 FeatureTogglableDecorator based on response from FeatureDecisions will update object behavior.
 
 # How to make new / existing feature togglable
-1. Check proof of concept application for simple implementation of feature toggling of better understanding. Link is posted in „worth to check” section.
-2. If possible extract feature to extension or separate file and implement this feature in a way it can be enabled / disabled. This can be done i.e. by using Strategy pattern or by injecting a behavior into a closure.
-3. Add toggle for this feature in configuration (local or external)
-4. Enable parsing of this feature toggle in ToggleRouter so it can provide information about
+1. If possible extract feature to extension or separate file and implement this feature in a way it can be enabled / disabled. This can be done i.e. by using Strategy pattern or by injecting a behavior into a closure.
+2. Add toggle for this feature in configuration (local or external)
+3. Enable parsing of this feature toggle in ToggleRouter so it can provide information about
 feature availability.
-5. Create feature decision for this feature in FeatureDecissions so it can be used later.
-6. Implement Togglable protocol in object that should contain this feature.
-7. Create separate method in FeatureTogglableDecorator that takes concrete destination object
+4. Create feature decision for this feature in FeatureDecissions so it can be used later.
+5. Implement Togglable protocol in object that should contain this feature.
+6. Create separate method in FeatureTogglableDecorator that takes concrete destination object
 and configures its decorate closure with desired behavior.
