@@ -1,5 +1,5 @@
 # Feature Toggling in Swift - Proof of Concept
-Based on this great article on feature toggling http:// martinfowler.com/articles/feature-toggles.html
+Based on this great article on feature toggling http://martinfowler.com/articles/feature-toggles.html
 
 # How it works
 ![alt overall_diagram] (https://raw.githubusercontent.com/ktustanowski/feature-toggle-proof-of-concept/master/Diagrams/Feature%20Toggling.png)
