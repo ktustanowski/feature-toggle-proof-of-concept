@@ -11,9 +11,9 @@ import UIKit
 extension FeatureTogglableDecorator {
     
     class func decorate(viewController: CoolFeatureViewController) {
-        viewController.decorate = {
+        viewController.decorate = { [weak viewController] in
             if let group = FeatureDecisions.abTest() {
-                viewController.performAbTest(group)
+                viewController?.performAbTest(group)
             }
         }
     }

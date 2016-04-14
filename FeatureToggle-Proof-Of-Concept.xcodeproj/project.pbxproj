@@ -123,7 +123,6 @@
 		9A0B92D21CB64D5D00271ACC /* FeatureToggle-Proof-Of-Concept */ = {
 			isa = PBXGroup;
 			children = (
-				9ADAB75F1CBD1331000BC032 /* Full.storyboard */,
 				9A0B92D31CB64D5D00271ACC /* AppDelegate.swift */,
 				9A0B92F31CB64DCD00271ACC /* DismissablelViewController.swift */,
 				9A0B93071CB6702300271ACC /* AwesomeFeatureViewController.swift */,
@@ -132,6 +131,7 @@
 				9A0B93091CB6743000271ACC /* CoolFeatureViewController */,
 				9A0B92F71CB6589600271ACC /* FeatureToggling */,
 				9A0B92D71CB64D5D00271ACC /* Main.storyboard */,
+				9ADAB75F1CBD1331000BC032 /* Full.storyboard */,
 				9A35AF391CB7DCB200A73359 /* AmazingFeature.storyboard */,
 				9A0B92DC1CB64D5D00271ACC /* LaunchScreen.storyboard */,
 				9A0B92DA1CB64D5D00271ACC /* Assets.xcassets */,
