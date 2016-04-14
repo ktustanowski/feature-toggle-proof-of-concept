@@ -2,6 +2,7 @@
 Based on this great article on feature toggling http://martinfowler.com/articles/feature-toggles.html
 
 # How it works
+This trivial proof of concept application uses only local content fetching but there can be much more into this.
 ![alt overall_diagram] (https://raw.githubusercontent.com/ktustanowski/feature-toggle-proof-of-concept/master/Diagrams/Feature%20Toggling.png)
 <b>ToggleRouter</b> - Object that fetches the feature configuration for the app.
 
